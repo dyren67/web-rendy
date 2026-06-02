@@ -1,0 +1,194 @@
+/* Mengimpor font bergaya pixel/retro */
+@import url('https://fonts.googleapis.com/css2?family=VT323&family=Share+Tech+Mono&display=swap');
+
+body {
+    background: linear-gradient(135deg, #ff007f, #00f0ff, #7000ff);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    font-family: 'Share Tech Mono', monospace;
+    color: #000;
+    margin: 0;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Teks Berjalan */
+.top-marquee {
+    background: #000;
+    color: #00ff00;
+    padding: 5px 0;
+    font-weight: bold;
+    border-bottom: 3px double #00ff00;
+    font-family: 'VT323', monospace;
+    font-size: 1.5rem;
+}
+
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+/* Header */
+.y2k-header {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    border: 4px solid #000;
+    box-shadow: 5px 5px 0px #000;
+    padding: 15px;
+    margin-bottom: 30px;
+    transform: rotate(-1deg);
+}
+
+.y2k-header h1 {
+    margin: 0;
+    font-family: 'VT323', monospace;
+    font-size: 3rem;
+    color: #ff007f;
+    text-shadow: 3px 3px 0px #00f0ff;
+}
+
+/* Tampilan Windows Jadul */
+.main-content {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.y2k-box {
+    background: #c0c0c0; /* Warna abu-abu PC jadul */
+    border: 3px solid;
+    border-color: #fff #808080 #808080 #fff;
+    box-shadow: 4px 4px 0px #000;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.profile-box { flex: 1; min-width: 250px; }
+.bio-box { flex: 2; min-width: 300px; }
+
+.box-header {
+    background: linear-gradient(90deg, #000080, #1084d0);
+    color: white;
+    padding: 4px 8px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.box-buttons span {
+    background: #c0c0c0;
+    color: black;
+    border: 1px solid #fff;
+    padding: 0 4px;
+    margin-left: 2px;
+    cursor: pointer;
+    font-size: 0.7rem;
+}
+
+.box-body {
+    padding: 20px;
+    border: 2px inset #fff;
+    background: #fff;
+    margin: 4px;
+}
+
+.center { text-align: center; }
+
+/* Avatar */
+.pixel-avatar {
+    width: 100px;
+    height: 100px;
+    background: #ff007f;
+    border: 3px dashed #00f0ff;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.status {
+    color: #00aa00;
+    font-weight: bold;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+/* Tabel Biodata */
+.bio-table {
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+.bio-table td {
+    padding: 8px 5px;
+}
+
+.pixel-hr {
+    border: none;
+    border-top: 2px dashed #000;
+    margin: 15px 0;
+}
+
+.quote {
+    font-style: italic;
+    color: #555;
+    text-align: center;
+}
+
+/* MP3 Player */
+.mp3-player {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.player-body {
+    background: #000 !important;
+    color: #00ff00;
+    font-family: 'VT323', monospace;
+    text-align: center;
+}
+
+.song-info {
+    border: 1px solid #00ff00;
+    padding: 5px;
+    margin-bottom: 10px;
+    background: #111;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-retro {
+    background: #c0c0c0;
+    border: 2px solid;
+    border-color: #fff #555 #555 #fff;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.btn-retro:active {
+    border-color: #555 #fff #fff #555;
+}
+
+.visualizer {
+    margin: 10px 0 0 0;
+    letter-spacing: 2px;
+}
